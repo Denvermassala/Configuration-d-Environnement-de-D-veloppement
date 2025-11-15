@@ -1,0 +1,20 @@
+# Configuration Git - Exemple
+# Copiez ce fichier vers ~/.gitconfig ou utilisez les commandes suivantes :
+# git config --global user.name "Votre nom"
+# git config --global user.email "votre.email@example.com"
+
+[user]
+    name = Votre nom
+    email = votre.email@example.com
+
+[core]
+    editor = vim
+    autocrlf = input
+    filemode = false
+
+[init]
+    defaultBranch = main
+
+[push]
+    default = simple
+

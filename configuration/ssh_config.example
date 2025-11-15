@@ -1,0 +1,24 @@
+# Configuration SSH - Exemple
+# Ce fichier est un exemple de configuration pour ~/.ssh/config
+# La clé SSH est générée par le script setup.sh
+
+# Exemple de configuration pour GitHub
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_rsa
+    IdentitiesOnly yes
+
+# Exemple de configuration pour GitLab
+Host gitlab.com
+    HostName gitlab.com
+    User git
+    IdentityFile ~/.ssh/id_rsa
+    IdentitiesOnly yes
+
+# Configuration générale
+Host *
+    AddKeysToAgent yes
+    UseKeychain yes
+    IdentityFile ~/.ssh/id_rsa
+

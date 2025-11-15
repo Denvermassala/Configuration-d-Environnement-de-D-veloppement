@@ -1,0 +1,15 @@
+# Liste des paquets installés par setup.sh
+# Ces paquets sont nécessaires pour le bon fonctionnement de l'environnement de développement
+
+libcurl4
+vim
+curl
+git
+zsh
+
+# Paquets optionnels recommandés
+# build-essential
+# python3
+# nodejs
+# npm
+

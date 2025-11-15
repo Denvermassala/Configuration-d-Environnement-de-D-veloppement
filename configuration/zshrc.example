@@ -1,0 +1,29 @@
+# Configuration Zsh - Exemple
+# Ce fichier est un exemple de configuration pour ~/.zshrc
+# Après l'installation d'Oh My Zsh, ce fichier sera créé automatiquement
+
+# Path to your oh-my-zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
+
+# Nom du thème à charger
+ZSH_THEME="robbyrussell"
+
+# Plugins à charger
+plugins=(
+    git
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+)
+
+source $ZSH/oh-my-zsh.sh
+
+# Alias personnalisés
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias up='apt-get update; apt-get upgrade'
+alias down='apt-get install'
+
+# Variables d'environnement
+export PATH="$HOME/bin:$PATH"
+
